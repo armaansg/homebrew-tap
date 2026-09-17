@@ -1,6 +1,6 @@
 cask "clipboard-manager" do
   version "1.0.0"
-  sha256 "REPLACED_AUTOMATICALLY_BY_RELEASE_WORKFLOW"
+  sha256 "9b57b37703818f09f8f0f31b05b1cf37db59d7e67a671015cd792211dcb70ae9"
 
   url "https://github.com/armaansg/ClipboardManager/releases/download/v#{version}/ClipboardManager-#{version}.dmg"
   name "Clipboard Manager"
