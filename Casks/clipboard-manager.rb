@@ -26,8 +26,9 @@ cask "clipboard-manager" do
   ]
 
   caveats <<~EOS
-    Until releases are signed with an Apple Developer ID, macOS will block the first launch.
-    Either install with `brew install --cask --no-quarantine clipboard-manager`, or approve the app
-    once in System Settings → Privacy & Security → Open Anyway.
+    Until releases are signed with an Apple Developer ID, macOS will block the first launch with an
+    "Apple could not verify" message. Approve it once in System Settings → Privacy & Security → Open
+    Anyway, or clear the quarantine flag yourself:
+      xattr -dr com.apple.quarantine #{appdir}/ClipboardManager.app
   EOS
 end

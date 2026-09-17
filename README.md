@@ -7,7 +7,9 @@ brew tap armaansg/tap
 brew install --cask clipboard-manager
 ```
 
-Add `--no-quarantine` to the install command to skip the Gatekeeper prompt on unsigned builds.
+Homebrew no longer offers a flag to skip Gatekeeper's check on unsigned casks. Until releases are
+signed with a Developer ID, approve the app once after install: System Settings → Privacy & Security
+→ Open Anyway, or `xattr -dr com.apple.quarantine /Applications/ClipboardManager.app`.
 
 | Cask | App |
 | --- | --- |
